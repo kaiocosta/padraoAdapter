@@ -7,11 +7,9 @@ package padraoadapter;
 
 /**
  *
- * @author Kaioj
+ * @author Ramon
  */
-public class TomadaEuropeia {
-    
-    public void ligarNaTomadaEuropeia(){
-        System.out.println("Ligado Na Tomada Europeia");
-    }
+public interface IReceptorAnalogico {
+    //Alvo
+    public void receberSinalAnalogico();
 }
