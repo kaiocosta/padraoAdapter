@@ -7,11 +7,14 @@ package padraoadapter;
 
 /**
  *
- * @author Kaioj
+ * @author Ramon
  */
-public class TomadaAmericana {
- 
-    public void ligarNaTomadaAmericana(){
-        System.out.println("Ligado na tomada Americana");
+public class Conversor extends ReceptorDigital implements IReceptorAnalogico{
+    //Adaptador
+    @Override
+    public void receberSinalAnalogico()
+    {
+        receberSinalDigital();
     }
+    
 }

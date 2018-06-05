@@ -9,17 +9,16 @@ package padraoadapter;
  *
  * @author Kaioj
  */
-public class PadraoAdapter {
+public class TelevisorAnalogico {
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        
-        TomadaEuropeia te = new TomadaEuropeia();
-        
-        AdaptadorTomada a = new AdaptadorTomada(te);
-        a.ligarNaTomadaAmericana();
-    }
     
+    //Cliente
+    public static void main(String[] args) 
+    {
+        Conversor conversorDigital = new Conversor();
+        conversorDigital.receberSinalAnalogico();
+    }
 }
